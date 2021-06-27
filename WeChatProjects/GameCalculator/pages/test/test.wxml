@@ -1,0 +1,47 @@
+<!--pages/test/test.wxml-->
+<view class="headtype">原数据</view>
+<view class="databody">
+      <text class="texttype">攻击力</text>
+      <input class="inputtype" type="digit" placeholder="请输入攻击力" bindinput="geta1"></input>
+      <text class="texttype">暴击率</text>
+      <input class="inputtype" type="digit" placeholder="请输入暴击率" bindinput="geta2"></input>
+      <text class="texttype">暴击伤害</text>
+      <input class="inputtype" type="digit" placeholder="请输入暴击伤害" bindinput="geta3"></input>
+</view>
+<view class="headtype">原洗练数据</view>
+<view class="dataold">
+      <text class="texttype">原洗练攻击力</text>
+      <input class="inputtype" type="digit" placeholder="请输入原洗练攻击力" bindinput="getb1"></input>
+      <text class="texttype">原洗练暴击率</text>
+      <input class="inputtype" type="digit" placeholder="请输入原洗练暴击率" bindinput="getb2"></input>
+      <text class="texttype">原洗练暴击伤害</text>
+      <input class="inputtype" type="digit" placeholder="请输入原洗练暴击伤害" bindinput="getb3"></input>
+</view>
+<view class="headtype">新洗练数据</view>
+<view class="datanew">
+      <text class="texttype">新洗练攻击力</text>
+      <input class="inputtype" type="digit" placeholder="请输入新洗练攻击力" bindinput="getc1"></input>
+      <text class="texttype">新洗练暴击率</text>
+      <input class="inputtype" type="digit" placeholder="请输入新洗练暴击率" bindinput="getc2"></input>
+      <text class="texttype">新洗练暴击伤害</text>
+      <input class="inputtype" type="digit" placeholder="请输入新洗练暴击伤害" bindinput="getc3"></input>
+</view>
+<view class="headtype">请选择计算类型</view>
+<view class="chosebody">
+  <radio-group bindchange="typechange">
+    <label class="chose">
+      <radio value="1.58">攻击</radio>
+    </label>
+    <label class="chose">
+      <radio value="1.38">暴击</radio>
+    </label>
+  </radio-group>
+</view>
+<view>
+    <button type="primary" bindtap="calfun">计算</button>
+</view>
+<view class="resbody">
+  <view class="texttype">原洗练伤害能力数值：{{resold}}</view>
+  <view class="texttype">新洗练伤害能力数值：{{resnew}}</view>
+  <view class="texttype">更换洗练后数值差异：{{resdec}}</view>
+</view>
