@@ -85,6 +85,7 @@ Page({
     console.log("点击了计算按钮")
     let valdec=0,valTwo=0,valOne=0
     // 暴击套计算公式1.38
+    // 测试完了！
     if(elect==1.38){
       valOne=elect*(a1)*(1+(0.3+a2)*(0.5+a3))
       valTwo=elect*(a1+c1-b1)*(1+(0.3+a2+c2-b2)*(0.5+a3+c3-b3))
