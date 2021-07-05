@@ -83,12 +83,22 @@ Page({
   calfun(){
     // 返回计算结果
     console.log("点击了计算按钮")
-    let valOne=elect*(a1)*(1+(0.3+a2)*(0.5+a3))
-    let valTwo=elect*(a1+c1-b1)*(1+(0.3+a2+c2-b2)*(0.5+a3+c3-b3))
+    let valdec=0,valTwo=0,valOne=0
+    // 暴击套计算公式1.38
+    if(elect==1.38){
+      valOne=elect*(a1)*(1+(0.3+a2)*(0.5+a3))
+      valTwo=elect*(a1+c1-b1)*(1+(0.3+a2+c2-b2)*(0.5+a3+c3-b3))
+      valdec=valTwo-valOne
+      }
+      // 攻击套计算公式1.58
+    else{
+      valOne=elect*(a1)*(1+(a2)*(0.5+a3))
+      valTwo=elect*(a1+c1-b1)*(1+(a2+c2-b2)*(0.5+a3+c3-b3))
+      valdec=valTwo-valOne
+    }
     console.log("检查数值组a：",a1,a2,a3)
     console.log("检查数值组b：",b1,b2,b3)
     console.log("检查数值组c：",c1,c2,c3)
-    let valdec=valTwo-valOne
     console.log("calres1:",valOne,"calres1type:",typeof valOne)
     console.log("calres2:",valTwo,"calres2type:",typeof valTwo)
     console.log("calres3:",valdec,"calres3type:",typeof valdec)

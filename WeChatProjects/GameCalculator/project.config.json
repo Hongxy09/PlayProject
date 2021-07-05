@@ -33,9 +33,9 @@
     "showES6CompileOption": false
   },
   "compileType": "miniprogram",
-  "libVersion": "2.17.3",
+  "libVersion": "2.15.0",
   "appid": "wx21145e2ac036dafb",
-  "projectname": "洗练计算器",
+  "projectname": "%E6%B4%97%E7%BB%83%E8%AE%A1%E7%AE%97%E5%99%A8",
   "debugOptions": {
     "hidedInDevtools": []
   },
